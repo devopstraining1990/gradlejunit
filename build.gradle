@@ -1,0 +1,25 @@
+group 'org.softpost'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+test {
+    maxParallelForks=3
+    useJUnit {
+      //includeCategories '*.*'
+     // excludeCategories 'categories.CategoryY'
+    }
+
+    filter {
+        //include specific method in any of the tests
+        includeTestsMatching "*.*"
+    }
+}
