@@ -18,6 +18,9 @@ test {
      // excludeCategories 'categories.CategoryY'
     }
 
+    testLogging{
+        showStandardStreams = true
+    }
     filter {
         //include specific method in any of the tests
         includeTestsMatching "*.*"
