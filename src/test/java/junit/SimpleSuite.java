@@ -12,7 +12,8 @@ import org.junit.experimental.categories.Category;
 public class SimpleSuite {
 
     @Test
-    public void test1(){
+    public void test1() throws Exception{
+        Thread.sleep(1000*60*2);
         System.out.println("Category Y - executing test1");
     }
 
