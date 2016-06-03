@@ -13,6 +13,7 @@ public class SimpleSuite {
 
     @Test
     public void test1() throws Exception{
+        //added wait of 2 min
         Thread.sleep(1000*60*2);
         System.out.println("Category Y - executing test1");
     }
