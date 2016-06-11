@@ -12,6 +12,7 @@ public class SanitySuite {
     @Test
     public void teSanity1(){
         System.out.println("Category X - Running sanity test - 1");
+        System.out.println(System.getProperty("browser"));
     }
 
     @Test
