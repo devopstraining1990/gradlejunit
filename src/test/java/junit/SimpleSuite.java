@@ -16,6 +16,7 @@ public class SimpleSuite {
         //added wait of 2 min
         Thread.sleep(1000*60*2);
         System.out.println("Category Y - executing test1");
+        System.out.println(System.getProperty("browser"));
     }
 
     @Test
